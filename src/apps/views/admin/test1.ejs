@@ -1,0 +1,9 @@
+<h1>Welcome EJS</h1>
+<%- include("./test2.ejs", {title: "Tieu De Test2"})%>
+<% for(let item of data){%>
+    <p>
+        Name: <%=item.name%>
+        <br/>
+        Price: <%=item.price%>
+    </p>
+<% }%>
